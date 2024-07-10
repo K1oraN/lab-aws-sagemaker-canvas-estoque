@@ -1,47 +1,40 @@
-# 📊 Previsão de Estoque Inteligente na AWS com [SageMaker Canvas](https://aws.amazon.com/pt/sagemaker/canvas/)
+# 📊 Previsão de Estoque Inteligente na AWS
 
-Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com SageMaker Canvas. Neste Lab DIO, você aprenderá a usar o SageMaker Canvas para criar previsões de estoque baseadas em Machine Learning (ML). Siga os passos abaixo para completar o desafio!
+Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com SageMaker Canvas.
 
-## 📋 Pré-requisitos
+## 🚀 Passo a Passo (Desafio de Projeto):
 
-Antes de começar, certifique-se de ter uma conta na AWS. Se precisar de ajuda para criar sua conta, confira nosso repositório [AWS Cloud Quickstart](https://github.com/digitalinnovationone/aws-cloud-quickstart).
+### 1. Selecionando Dataset:
 
+-   O dataset ultilizado para esses projeto para o treinamento da M.L. foi disponibilizado no proprio repositório da DIO em `datasets`.
 
-## 🎯 Objetivos Deste Desafio de Projeto (Lab)
+![image](https://i.imgur.com/mLu0O3c.png)
 
-![image](https://github.com/digitalinnovationone/lab-aws-sagemaker-canvas-estoque/assets/730492/72f5c21f-5562-491e-aa42-2885a3184650)
+### 2. Construindo e Treinando:
 
-- Dê um fork neste projeto e reescreva este `README.md`. Sinta-se à vontade para detalhar todo o processo de criação do seu Modelo de ML para uma "Previsão de Estoque Inteligente".
-- Para isso, siga o [passo a passo] descrito a seguir e evolua as suas habilidades em ML no-code com o Amazon SageMaker Canvas.
-- Ao concluir, envie a URL do seu repositório com a solução na plataforma da DIO.
+-  Agora iremos fazer algumas cofigurações definindo o QUANTIDADE_ESTOQUE como `target` e o ID_PRODUTO como `ITEM ID`.
+-  Fiz também alterações nos campos `Specify the number of days you want to forecast into the future` onde vamos especificar o numero de dias que veremos no futuro para X, outra alteração foi habilitar o `Use holiday schedule` para usar feriados na predição.
+-  Treinei esse modelo no modo `Quick Build`.
 
+ [image](https://i.imgur.com/UMm4bVK.png)
 
-## 🚀 Passo a Passo
+### 3. Analisando
+-   Fiz ajuste no modelo para alcançar um métrica melhor, e a melhor que consegui foi essa na imagem usando o modo `Quick Build`.
+-   Após o treinamento, aqui vemos que o valor ainda foi bem acima porque as metricas `MAPE, WAPE, RMSE` quanto mais perto de `0` melhor e comparando com o outro modelos exemplos teve um valor bem alto.
+-   Uma coisa que poderiamos fazer era continuar treinando, mas me sastifez esses valores.
 
-### 1. Selecionar Dataset
+![image](https://i.imgur.com/nFTFk7l.png)
 
--   Navegue até a pasta `datasets` deste repositório. Esta pasta contém os datasets que você poderá escolher para treinar e testar seu modelo de ML. Sinta-se à vontade para gerar/enriquecer seus próprios datasets, quanto mais você se engajar, mais relevante esse projeto será em seu portfólio.
--   Escolha o dataset que você usará para treinar seu modelo de previsão de estoque.
--   Faça o upload do dataset no SageMaker Canvas.
+-   Outras coisas que podemos analisar é que o principais impactos foi no `preço` e `Feriados`, respectivamente com valores de `51%` e `12`% aproximadamente.
 
-### 2. Construir/Treinar
+![image](https://i.imgur.com/vl0C9As.png)
 
--   No SageMaker Canvas, importe o dataset que você selecionou.
--   Configure as variáveis de entrada e saída de acordo com os dados.
--   Inicie o treinamento do modelo. Isso pode levar algum tempo, dependendo do tamanho do dataset.
-
-### 3. Analisar
-
--   Após o treinamento, examine as métricas de performance do modelo.
--   Verifique as principais características que influenciam as previsões.
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
-
-### 4. Prever
+### 4. Prevendo
 
 -   Use o modelo treinado para fazer previsões de estoque.
 -   Exporte os resultados e analise as previsões geradas.
 -   Documente suas conclusões e qualquer insight obtido a partir das previsões.
 
-## 🤔 Dúvidas?
-
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
+![image]()
+![image]()
+![image]()
