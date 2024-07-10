@@ -16,7 +16,7 @@ Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com Sag
 -  Fiz também alterações nos campos `Specify the number of days you want to forecast into the future` onde vamos especificar o numero de dias que veremos no futuro para X, outra alteração foi habilitar o `Use holiday schedule` para usar feriados na predição.
 -  Treinei esse modelo no modo `Quick Build`.
 
- [image](https://i.imgur.com/UMm4bVK.png)
+![image](https://i.imgur.com/UMm4bVK.png)
 
 ### 3. Analisando
 -   Fiz ajuste no modelo para alcançar um métrica melhor, e a melhor que consegui foi essa na imagem usando o modo `Quick Build`.
@@ -31,10 +31,10 @@ Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com Sag
 
 ### 4. Prevendo
 
--   Use o modelo treinado para fazer previsões de estoque.
--   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
+-   Usa o modelo treinado, podemos ver o resultado final das previsões geradas.
+-   Analisando vemos que o item denominado como `Item III` e `Item IV`, considerando isso no `datasets`. Podemos ver que o etoque que tivemos uma alta, então não seria necessário no momento a compra de mais itens.
+-   Já no `Item V` vemos uma baixa que seria necessário a compra de mais desse item.
 
-![image]()
-![image]()
-![image]()
+![image](https://i.imgur.com/UeuLDtx.png)
+![image](https://i.imgur.com/jeVS9Ty.png)
+![image](https://i.imgur.com/0NmCcbN.png)
