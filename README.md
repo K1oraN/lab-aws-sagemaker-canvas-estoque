@@ -35,9 +35,9 @@ Bem-vindo ao desafio de projeto "Previsão de Estoque Inteligente na AWS com Sag
 -   Analisando vemos que o item denominado como `Item III` e `Item IV`, considerando isso no `datasets`. Podemos ver que o etoque que tivemos uma alta, então não seria necessário no momento a compra de mais itens.
 -   Já no `Item V` vemos uma baixa que seria necessário a compra de mais desse item.
 
-P10 LINHA ROSA (Reflete um cenário pessimista)
-P50 LINHA VERDE(Reflete um cenário neutro)
-P90 LINHA AMARELO(Reflete um cenário otimista)
+- P10 LINHA ROSA (Reflete um cenário pessimista)
+- P50 LINHA VERDE(Reflete um cenário neutro)
+- P90 LINHA AMARELO(Reflete um cenário otimista)
 
 ![image](https://i.imgur.com/UeuLDtx.png)
 ![image](https://i.imgur.com/jeVS9Ty.png)
